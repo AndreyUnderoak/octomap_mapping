@@ -7,7 +7,7 @@
   www.ros.org/wiki/octomap_server for details  
 -->
 <launch>
-	<node name="my_python_node" pkg="octomap_server" type="andrew_helper.py" output="screen"/>
+	<node name="my_python_node" pkg="octomap_server" type="scripts/andrew_helper.py" output="screen"/>
 	<node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
 		<param name="resolution" value="0.05" />
 		
